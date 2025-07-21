@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.btn-primary{
+    background: #DD0000;
+    padding: 15px 25px;
+    font-weight: 600;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #161616;
+    border-radius: 30px;
+    margin: 80px auto;
+
+}
+.banner-left{
+    padding-left: 45px;
+    flex: 1;
+}
+.banner-right{
+    flex: 1;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 4.37rem;
+    color: #FFFFFF;
+    line-height: 80px;
+
+}
+.banner-description{
+    max-width: 540px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 20px 0px;
+}
+.banner-right img{
+    display: block;
+}
+/* card section start */
+.card-container{
+    display: flex;
+    gap: 50px;
+}
+.card-left{
+    display: flex;
+    flex-direction: column;
+    background: black;
+    padding: 30px;
+    height: fit-content;
+    border-radius: 10px;
+    width: 25%;
+}
+.card-left .btn-primary{
+    margin-bottom: 30px;
+}
+.card-left .btn-primary:nth-child(2){
+    background: white;
+    color: black
+}
+.card-left .btn-primary:nth-child(1){
+    background: white;
+    color: black;
+}
+.card-right img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-width: 100%;
+    
+}
+.card-right{
+    
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+   
+    
+    
+}
+.card{
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 8px;
+}
+.card-right-content{
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.card-right-content .btn-primary{
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.card-right-content h3{
+    color: #161616;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 15px 0px;
+}
+.card-icon{
+    display: flex;
+    gap: 20px;
+    color: #161616B3;
+    font-weight: 400;
+}
+/* Responsive design for laptop */
+@media (max-width:992px) {
+    .banner-title{
+        font-weight: 700;
+    font-size: 3.125rem;
+    color: #FFFFFF;
+    line-height: 50px;
+    }
+    .card-container{
+        flex-direction: column;
+    }
+    .card-left{
+        flex-direction: row;
+        width: 100%;
+        background: transparent;
+        
+    }
+    .card-left > *{
+        flex: 1;
+        
+    }
+    .card-left .btn-primary{
+        border-radius: 10px;
+        border: 1px solid rgb(232, 232, 232);
+        margin: 0px 5px;
+        
+    }
+    .card-right{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* Mobile device */
+@media (max-width: 768px) {
+    .banner{
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+    .banner-title{
+        margin-top: 25px;
+    }
+    .banner-description{
+        margin: 25px auto;
+    }
+}
