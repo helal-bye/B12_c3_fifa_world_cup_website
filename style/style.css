@@ -121,6 +121,9 @@ img{
 }
 /* Responsive design for laptop */
 @media (max-width:992px) {
+    .container{
+        margin: 0px 20px;
+    }
     .banner-title{
         font-weight: 700;
     font-size: 3.125rem;
@@ -152,6 +155,9 @@ img{
 }
 /* Mobile device */
 @media (max-width: 768px) {
+    .container{
+        margin: 0px 10px;
+    }
     .banner{
         flex-direction: column;
         text-align: center;
@@ -162,5 +168,13 @@ img{
     }
     .banner-description{
         margin: 25px auto;
+    }
+    .card-left{
+        flex-direction: column;
+        gap: 30px;
+        
+    }
+    .card-right{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
